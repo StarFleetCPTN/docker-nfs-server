@@ -1,8 +1,10 @@
 name: "nfs-server"
 
+# on:
+#   - "push"
 on:
-  - "push"
-
+  workflow_dispatch:
+  
 jobs:
   build:
     if: "github.ref == 'refs/heads/main'"
